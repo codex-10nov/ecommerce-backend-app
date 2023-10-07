@@ -11,6 +11,7 @@ const mongoDB = {
           useNewUrlParser: true,
           useUnifiedTopology: true,
         });
+        mongoose.set('debug', true);
         console.log('Connected to MongoDB Atlas');
       } catch (error) {
         console.error('Error: ', error);
